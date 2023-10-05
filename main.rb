@@ -42,6 +42,14 @@ class LinkedList
     def to_s
         @linked_list.map { |value| "( #{value} )"}.join(" -> ") + " -> nil"
     end
+
+    def insert_at(value, index)
+        @linked_list.insert(value, index)
+    end
+
+    def remove_at(index)
+        @linked_list.delete_at(index)
+    end
 end
 
 class Node
@@ -52,3 +60,5 @@ class Node
     end
 
 end
+
+
