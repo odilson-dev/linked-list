@@ -26,6 +26,18 @@ class LinkedList
     def at(index)
         @linked_list[index]
     end
+
+    def pop
+        @linked_list.pop
+    end
+
+    def contains?(value)
+        @linked_list.include? value
+    end
+
+    def find(value)
+        @linked_list.find_index value
+    end
 end
 
 class Node
