@@ -5,11 +5,8 @@ end
 
 class Node
     def initialize
+        @value = nil
+        @next_node = nil
     end
 
-    def value
-    end
-
-    def next_node
-    end
 end
