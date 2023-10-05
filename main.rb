@@ -14,6 +14,18 @@ class LinkedList
     def size
         @linked_list.size
     end
+
+    def head
+        @linked_list.first
+    end
+
+    def tail
+        @linked_list.last
+    end
+
+    def at(index)
+        @linked_list[index]
+    end
 end
 
 class Node
