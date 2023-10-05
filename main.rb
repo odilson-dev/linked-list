@@ -31,12 +31,16 @@ class LinkedList
         @linked_list.pop
     end
 
-    def contains?(value)
-        @linked_list.include? value
+    def contains?(node)
+        @linked_list.include? node.value
     end
 
-    def find(value)
-        @linked_list.find_index value
+    def find(node)
+        @linked_list.find_index node.value
+    end
+
+    def to_s
+        @linked_list.map { |value| "( #{value} )"}.join(" -> ") + " -> nil"
     end
 end
 
