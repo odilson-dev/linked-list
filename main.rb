@@ -60,5 +60,3 @@ class Node
     end
 
 end
-
-
